@@ -1,7 +1,7 @@
 import {
   ArrowRight,
   ShieldCheck,
-  WalletCards,
+  Workflow,
   Smartphone,
   Users,
 } from "lucide-react";
@@ -14,38 +14,28 @@ export default function Hero() {
 
         <div className="grid lg:grid-cols-2 gap-20 items-center">
 
-
           {/* Left */}
 
           <div>
 
-
             <span className="inline-flex items-center rounded-full bg-blue-50 text-blue-700 px-4 py-2 text-sm font-semibold">
-              Modern Financial Services & Digital Solutions
+              Digital Solutions & Operational Support
             </span>
 
 
-
             <h1 className="mt-8 text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-slate-900">
-
-              Helping you manage financial needs with confidence.
-
+              Technology solutions that simplify modern financial operations.
             </h1>
 
 
-
             <p className="mt-8 text-xl leading-9 text-gray-600">
-
-              WZ Financial Group provides financial guidance,
-              digital solutions and professional support designed for
-              individuals, professionals, creators and growing businesses.
-
+              WZ Financial Group provides digital solutions, operational
+              support and technology-enabled workflows designed for
+              individuals, professionals, creators and businesses.
             </p>
 
 
-
             <div className="flex flex-wrap gap-5 mt-10">
-
 
               <a
                 href="/contact"
@@ -70,7 +60,6 @@ export default function Hero() {
               </a>
 
 
-
               <a
                 href="/services"
                 className="
@@ -88,56 +77,42 @@ export default function Hero() {
                 Explore Services
               </a>
 
-
             </div>
 
-
           </div>
-
-
-
 
 
           {/* Right */}
 
           <div>
 
-
             <div className="bg-slate-900 rounded-[32px] p-10 shadow-2xl">
 
-
               <div className="flex items-center justify-between">
-
 
                 <h2 className="text-2xl font-bold text-white">
                   Why WZ Financial Group
                 </h2>
 
-
                 <ShieldCheck className="text-blue-400" size={28} />
-
 
               </div>
 
 
-
               <p className="text-gray-400 mt-3">
-                Professional support combined with modern technology.
+                Practical technology and operational solutions built for
+                modern businesses and professionals.
               </p>
-
-
 
 
               <div className="mt-8 space-y-5">
 
 
-
                 <div className="bg-slate-800 rounded-2xl p-5 flex items-center gap-5">
-
 
                   <div className="bg-blue-600 rounded-xl p-3">
 
-                    <WalletCards className="text-white" size={24} />
+                    <Workflow className="text-white" size={24} />
 
                   </div>
 
@@ -145,25 +120,21 @@ export default function Hero() {
                   <div>
 
                     <h3 className="text-white font-semibold">
-                      Financial Support
+                      Operational Support
                     </h3>
 
 
                     <p className="text-gray-400 text-sm mt-1">
-                      Organize and manage financial activities.
+                      Structured workflows that improve efficiency.
                     </p>
 
                   </div>
-
 
                 </div>
 
 
 
-
-
                 <div className="bg-slate-800 rounded-2xl p-5 flex items-center gap-5">
-
 
                   <div className="bg-blue-600 rounded-xl p-3">
 
@@ -180,20 +151,16 @@ export default function Hero() {
 
 
                     <p className="text-gray-400 text-sm mt-1">
-                      Technology that simplifies everyday processes.
+                      Technology designed to simplify processes.
                     </p>
 
                   </div>
-
 
                 </div>
 
 
 
-
-
                 <div className="bg-slate-800 rounded-2xl p-5 flex items-center gap-5">
-
 
                   <div className="bg-blue-600 rounded-xl p-3">
 
@@ -205,19 +172,17 @@ export default function Hero() {
                   <div>
 
                     <h3 className="text-white font-semibold">
-                      Personal Approach
+                      Professional Support
                     </h3>
 
 
                     <p className="text-gray-400 text-sm mt-1">
-                      Solutions designed around your needs.
+                      Solutions designed around client requirements.
                     </p>
 
                   </div>
 
-
                 </div>
-
 
 
               </div>
@@ -225,15 +190,12 @@ export default function Hero() {
 
             </div>
 
-
           </div>
 
 
         </div>
 
-
       </div>
-
 
     </section>
   );
