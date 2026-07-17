@@ -10,9 +10,15 @@ export default function Footer() {
             </h3>
 
             <p className="mt-5 leading-7">
-              Modern financial guidance, digital solutions and operational
-              support designed for individuals, professionals and businesses.
-            </p>
+  Digital solutions, operational support and financial technology
+  services designed for individuals, professionals and businesses.
+</p>
+
+<p className="mt-4 text-sm text-gray-400 leading-6">
+  WZ Financial Group provides technology solutions and operational
+  support services. We do not provide personal financial product
+  advice, investment recommendations or asset management services.
+</p>
           </div>
 
           {/* Company */}
