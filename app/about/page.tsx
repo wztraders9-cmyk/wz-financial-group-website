@@ -68,8 +68,8 @@ export default function AboutPage() {
 
           <p className="mt-8 text-lg leading-8 text-slate-600">
             WZ Financial Group was established to develop practical digital
-            solutions and operational support services for an increasingly
-            technology-driven financial environment.
+solutions and operational support services for an increasingly
+technology-driven business environment.
           </p>
 
           <p className="mt-6 text-lg leading-8 text-slate-600">
@@ -181,8 +181,8 @@ export default function AboutPage() {
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-8 text-center">
           <h2 className="text-4xl font-bold text-slate-900">
-            Build Better Financial Operations With Technology
-          </h2>
+  Build Better Financial Operations With Technology
+</h2>
 
           <p className="mt-6 text-lg text-slate-600 leading-8">
             Whether you need digital solutions, operational support or
