@@ -8,26 +8,26 @@ import {
 const steps = [
   {
     number: "01",
-    title: "Understand Your Needs",
-    text: "We review your goals, challenges and requirements to understand the right financial support approach.",
+    title: "Understand Requirements",
+    text: "We review your objectives, challenges and operational needs to understand the right approach.",
     icon: Search,
   },
   {
     number: "02",
-    title: "Create A Solution",
-    text: "We develop practical guidance and digital solutions designed around your specific situation.",
+    title: "Design Solutions",
+    text: "We develop practical technology solutions and workflows designed around your requirements.",
     icon: Lightbulb,
   },
   {
     number: "03",
-    title: "Provide Ongoing Support",
-    text: "Our team helps with implementation, organization and continued assistance when needed.",
+    title: "Implement & Support",
+    text: "We assist with implementation, organization and ongoing operational support when required.",
     icon: Headphones,
   },
   {
     number: "04",
-    title: "Build Long-Term Value",
-    text: "We focus on trusted relationships and solutions that support future financial goals.",
+    title: "Create Long-Term Value",
+    text: "We focus on reliable solutions that improve efficiency and support future growth.",
     icon: TrendingUp,
   },
 ];
@@ -47,13 +47,13 @@ export default function Process() {
 
 
           <h2 className="text-4xl lg:text-5xl font-bold mt-4">
-            A structured approach built around your goals
+            A structured approach to better operations
           </h2>
 
 
           <p className="text-gray-400 mt-6 text-lg leading-8">
-            We combine professional guidance, technology and ongoing support
-            to deliver a clear and reliable client experience.
+            We combine technology, operational expertise and ongoing support
+            to deliver practical solutions built around client requirements.
           </p>
 
         </div>
