@@ -28,15 +28,15 @@ export default function CTA() {
 
 
         <h2 className="text-4xl lg:text-5xl font-bold tracking-tight">
-          Ready to simplify your financial journey?
+          Ready to improve your digital operations?
         </h2>
 
 
 
         <p className="mt-6 text-xl leading-8 text-blue-100 max-w-3xl mx-auto">
-          Whether you need financial guidance, digital solutions or
-          professional support, WZ Financial Group provides practical
-          solutions designed around your goals.
+          Whether you need technology solutions, operational support or
+          digital workflows, WZ Financial Group provides practical solutions
+          designed around your requirements.
         </p>
 
 
