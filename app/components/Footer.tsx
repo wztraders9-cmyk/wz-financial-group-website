@@ -2,8 +2,7 @@ export default function Footer() {
   return (
     <footer className="bg-slate-950 text-gray-300">
 
-      <div className="max-w-7xl mx-auto px-8 py-20">
-
+      <div className="max-w-7xl mx-auto px-8 py-16">
 
         <div className="grid md:grid-cols-4 gap-10">
 
@@ -69,7 +68,7 @@ export default function Footer() {
 
 
 
-          {/* Services */}
+          {/* Solutions */}
 
           <div>
 
@@ -84,9 +83,9 @@ export default function Footer() {
 
               <li>Digital Financial Solutions</li>
 
-              <li>Creator & Professional Support</li>
+              <li>Professional Support</li>
 
-              <li>Business Support Solutions</li>
+              <li>Business Solutions</li>
 
             </ul>
 
@@ -106,18 +105,17 @@ export default function Footer() {
 
 
             <p className="leading-7">
-              Operated by WZ Traders Pty Ltd
+              WZ Traders Pty Ltd
             </p>
 
 
-            <p className="mt-3">
+            <p className="mt-2">
               Australia
             </p>
 
 
             <p className="mt-3 text-sm text-gray-400">
-              Responsible financial practices,
-              security awareness and professional standards.
+              Professional standards and secure operations.
             </p>
 
 
@@ -135,7 +133,7 @@ export default function Footer() {
           className="
             border-t
             border-slate-800
-            mt-16
+            mt-12
             pt-8
             flex
             flex-col
