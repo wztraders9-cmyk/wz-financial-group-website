@@ -9,7 +9,7 @@ import {
 
 const services = [
   {
-    title: "Financial Guidance",
+    title: "Financial Support",
     description:
       "Personal financial support to help individuals understand options, organize finances and make informed decisions.",
     icon: ChartLine,
