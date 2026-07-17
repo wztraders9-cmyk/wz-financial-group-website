@@ -1,7 +1,7 @@
 import {
   ArrowRight,
-  ChartLine,
-  WalletCards,
+  Workflow,
+  FileCheck,
   Smartphone,
   ShieldCheck,
   MonitorSmartphone,
@@ -11,52 +11,49 @@ import {
 
 const services = [
   {
-    title: "Financial Guidance",
+    title: "Digital Solutions",
     description:
-      "Practical financial support to help individuals understand options, organize their finances and make informed decisions.",
-    icon: ChartLine,
-  },
-  {
-    title: "Personal Financial Support",
-    description:
-      "Assistance with financial administration, documentation and managing everyday financial activities.",
-    icon: WalletCards,
-  },
-  {
-    title: "Digital Financial Solutions",
-    description:
-      "Technology-driven solutions that make financial tasks simpler, more organized and easier to manage.",
+      "Technology solutions designed to simplify digital processes, improve efficiency and support modern financial workflows.",
     icon: Smartphone,
   },
   {
-    title: "Financial Security & Protection",
+    title: "Operational Support",
     description:
-      "Support with secure financial practices, privacy awareness and reducing risks in digital financial activities.",
+      "Structured operational assistance including process management, administration and workflow improvements.",
+    icon: Workflow,
+  },
+  {
+    title: "Identity Verification Support",
+    description:
+      "Digital verification workflows that help organizations improve onboarding processes and maintain accurate records.",
+    icon: FileCheck,
+  },
+  {
+    title: "Risk & Compliance Support",
+    description:
+      "Technology-enabled tools and operational support to assist with documentation, monitoring and internal processes.",
     icon: ShieldCheck,
   },
   {
     title: "Creator & Professional Support",
     description:
-      "Operational and financial support for creators, freelancers and digital professionals managing modern income streams.",
+      "Operational tools and digital support for creators, freelancers and professionals managing online activities.",
     icon: MonitorSmartphone,
   },
   {
     title: "Business Support Solutions",
     description:
-      "Structured financial and operational support for entrepreneurs and growing businesses.",
+      "Digital infrastructure and operational solutions designed to support growing businesses and entrepreneurs.",
     icon: BriefcaseBusiness,
   },
 ];
 
 
 export default function Services() {
-
   return (
-
     <section className="bg-white py-24">
 
       <div className="max-w-7xl mx-auto px-8">
-
 
         {/* Header */}
 
@@ -68,31 +65,26 @@ export default function Services() {
 
 
           <h2 className="mt-4 text-4xl lg:text-5xl font-bold tracking-tight text-slate-900">
-            Financial solutions designed for modern life
+            Technology and operational solutions for modern businesses and professionals
           </h2>
 
 
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            WZ Financial Group provides financial guidance, digital solutions
-            and professional support designed for individuals, professionals,
-            creators and businesses.
+            WZ Financial Group provides digital solutions, operational support
+            and technology-enabled workflows designed to improve efficiency,
+            organization and business processes.
           </p>
 
-
         </div>
-
-
 
 
         {/* Cards */}
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-
           {services.map((service) => {
 
             const Icon = service.icon;
-
 
             return (
 
@@ -111,7 +103,6 @@ export default function Services() {
                   hover:shadow-xl
                 "
               >
-
 
                 <div
                   className="
@@ -134,25 +125,18 @@ export default function Services() {
                 </div>
 
 
-
                 <h3 className="mt-6 text-xl font-semibold text-slate-900">
-
                   {service.title}
-
                 </h3>
 
 
-
                 <p className="mt-4 text-gray-600 leading-7">
-
                   {service.description}
-
                 </p>
 
 
-
                 <a
-                  href="/services"
+                  href="/contact"
                   className="
                     mt-6
                     inline-flex
@@ -165,14 +149,11 @@ export default function Services() {
                     hover:gap-3
                   "
                 >
-
                   Learn More
 
                   <ArrowRight size={16}/>
 
                 </a>
-
-
 
               </div>
 
@@ -180,27 +161,22 @@ export default function Services() {
 
           })}
 
-
         </div>
-
-
 
 
         {/* CTA */}
 
         <div className="mt-16 rounded-3xl bg-slate-900 p-10 text-center">
 
-
           <h3 className="text-3xl font-bold text-white">
-            Need support with your financial goals?
+            Need technology or operational support?
           </h3>
 
 
           <p className="mt-4 max-w-2xl mx-auto text-gray-400">
-            Explore how WZ Financial Group can help simplify financial
-            activities through professional support and digital solutions.
+            Explore how WZ Financial Group can help improve workflows,
+            digital processes and operational efficiency.
           </p>
-
 
 
           <a
@@ -227,13 +203,11 @@ export default function Services() {
 
           </a>
 
-
         </div>
 
 
       </div>
 
     </section>
-
   );
 }
