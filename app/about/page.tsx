@@ -4,36 +4,36 @@ const values = [
   {
     title: "Integrity",
     description:
-      "We believe trust is built through transparency, ethical conduct and responsible financial practices.",
+      "We build trust through transparency, responsible practices and professional service delivery.",
     icon: ShieldCheck,
   },
   {
-    title: "Professional Excellence",
+    title: "Operational Excellence",
     description:
-      "Our commitment is to deliver reliable financial guidance and operational support with the highest professional standards.",
+      "We design efficient workflows and support systems that help clients improve everyday operations.",
     icon: Target,
   },
   {
     title: "Innovation",
     description:
-      "We embrace technology and modern financial solutions to improve efficiency and create better client experiences.",
+      "We use modern technology solutions to simplify processes and create better digital experiences.",
     icon: Lightbulb,
   },
   {
     title: "Client Success",
     description:
-      "Every solution we provide is focused on helping clients achieve sustainable financial and operational outcomes.",
+      "Our solutions are designed around practical outcomes, efficiency and long-term relationships.",
     icon: Users,
   },
 ];
 
 const reasons = [
-  "Professional Financial Expertise",
-  "Secure & Confidential Services",
   "Technology-Driven Solutions",
-  "Personalized Client Support",
+  "Operational Workflow Support",
+  "Secure Digital Processes",
+  "Identity Verification Solutions",
+  "Professional Client Support",
   "Transparent Communication",
-  "Long-Term Partnerships",
 ];
 
 export default function AboutPage() {
@@ -47,14 +47,14 @@ export default function AboutPage() {
           </p>
 
           <h1 className="mt-6 text-5xl font-bold leading-tight">
-            Helping You Make Financial Decisions With Confidence
+            Technology Solutions Supporting Modern Financial Operations
           </h1>
 
           <p className="mt-8 max-w-3xl mx-auto text-lg text-slate-300 leading-8">
-            WZ Financial Group delivers professional financial advisory,
-            operational support and technology-driven solutions designed to
-            help individuals and businesses operate with greater confidence,
-            efficiency and long-term success.
+            WZ Financial Group, operated by WZ Traders Pty Ltd, provides
+            digital solutions, operational support and technology-driven
+            workflows designed to help individuals and businesses manage
+            financial activities more efficiently.
           </p>
         </div>
       </section>
@@ -67,22 +67,26 @@ export default function AboutPage() {
           </h2>
 
           <p className="mt-8 text-lg leading-8 text-slate-600">
-            WZ Financial Group was established to provide modern financial
-            support, operational expertise and technology solutions that help
-            individuals and businesses navigate an increasingly digital
-            financial environment.
+            WZ Financial Group was established to develop practical digital
+            solutions and operational support services for an increasingly
+            technology-driven financial environment.
           </p>
 
           <p className="mt-6 text-lg leading-8 text-slate-600">
-            By combining practical financial knowledge with innovative
-            technology, we deliver efficient, transparent and client-focused
-            solutions that simplify financial processes and support informed
-            decision-making.
+            We combine technology, workflow design and operational expertise
+            to help clients improve efficiency, manage processes and adopt
+            modern digital solutions.
+          </p>
+
+          <p className="mt-6 text-sm leading-7 text-slate-500">
+            WZ Financial Group provides technology solutions and operational
+            support services. We do not provide personal financial product
+            advice, investment recommendations or asset management services.
           </p>
         </div>
       </section>
 
-      {/* Mission & Values */}
+      {/* Values */}
       <section className="bg-slate-50 py-24">
         <div className="max-w-7xl mx-auto px-8">
           <div className="text-center">
@@ -91,7 +95,7 @@ export default function AboutPage() {
             </h2>
 
             <p className="mt-6 text-lg text-slate-600">
-              The principles that guide every client relationship.
+              The principles that guide our work and client relationships.
             </p>
           </div>
 
@@ -122,7 +126,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Our Approach */}
+      {/* Approach */}
       <section className="py-24">
         <div className="max-w-6xl mx-auto px-8 text-center">
           <h2 className="text-4xl font-bold">
@@ -130,7 +134,7 @@ export default function AboutPage() {
           </h2>
 
           <div className="grid md:grid-cols-4 gap-10 mt-16">
-            {["Understand", "Assess", "Deliver", "Support"].map((step, index) => (
+            {["Understand", "Design", "Implement", "Support"].map((step, index) => (
               <div key={step}>
                 <div className="w-16 h-16 mx-auto rounded-full bg-blue-600 text-white flex items-center justify-center text-xl font-bold">
                   {index + 1}
@@ -154,7 +158,7 @@ export default function AboutPage() {
             </h2>
 
             <p className="mt-6 text-slate-300 text-lg">
-              Built on professionalism, trust and long-term client relationships.
+              Combining technology, operational expertise and practical solutions.
             </p>
           </div>
 
@@ -177,13 +181,13 @@ export default function AboutPage() {
       <section className="py-24">
         <div className="max-w-4xl mx-auto px-8 text-center">
           <h2 className="text-4xl font-bold text-slate-900">
-            Let's Build a Stronger Financial Future Together
+            Build Better Financial Operations With Technology
           </h2>
 
           <p className="mt-6 text-lg text-slate-600 leading-8">
-            Whether you're an individual seeking financial guidance or a
-            business looking for operational support, we're here to help you
-            move forward with confidence.
+            Whether you need digital solutions, operational support or
+            technology-enabled workflows, WZ Financial Group helps simplify
+            complex processes.
           </p>
 
           <a
