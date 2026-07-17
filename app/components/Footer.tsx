@@ -71,13 +71,16 @@ export default function Footer() {
           </p>
 
           {/* Center */}
-          <p className="text-sm text-gray-500 text-center">
-            Operated by{" "}
-            <span className="font-medium text-gray-300">
-              WZ Traders Pty Ltd
-            </span>{" "}
-            · Australia
-          </p>
+<p className="text-sm text-gray-500 text-center">
+  Operated by{" "}
+  <span className="font-medium text-gray-300">
+    WZ Traders Pty Ltd
+  </span>
+  <br />
+  ACN: 683 347 579 · ABN: 27 683 347 579
+  <br />
+  Australia
+</p>
 
           {/* Right */}
           <div className="flex items-center gap-4 text-sm">
