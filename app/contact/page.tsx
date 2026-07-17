@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import {
   MessageCircle,
   BriefcaseBusiness,
@@ -24,6 +26,44 @@ const contactOptions = [
 ];
 
 export default function ContactPage() {
+    const [form, setForm] = useState({
+    name: "",
+    email: "",
+    service: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState("");
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+
+    setLoading(true);
+    setStatus("");
+
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    });
+
+    setLoading(false);
+
+    if (response.ok) {
+      setStatus("Thank you! Your enquiry has been sent.");
+      setForm({
+        name: "",
+        email: "",
+        service: "",
+        message: "",
+      });
+    } else {
+      setStatus("Something went wrong. Please try again.");
+    }
+  }
   return (
     <main className="min-h-screen bg-white">
 
@@ -151,91 +191,108 @@ export default function ContactPage() {
 
 
 
-            <form className="mt-8 space-y-5">
+            <form onSubmit={handleSubmit} className="mt-8 space-y-5">
 
+  <input
+    type="text"
+    placeholder="Full Name"
+    value={form.name}
+    onChange={(e) =>
+      setForm({ ...form, name: e.target.value })
+    }
+    required
+    className="
+      w-full
+      rounded-xl
+      bg-white
+      px-5
+      py-4
+      text-slate-900
+      outline-none
+    "
+  />
 
-              <input
-                type="text"
-                placeholder="Full Name"
-                className="
-                  w-full
-                  rounded-xl
-                  bg-white
-                  px-5
-                  py-4
-                  text-slate-900
-                  outline-none
-                "
-              />
+  <input
+    type="email"
+    placeholder="Email Address"
+    value={form.email}
+    onChange={(e) =>
+      setForm({ ...form, email: e.target.value })
+    }
+    required
+    className="
+      w-full
+      rounded-xl
+      bg-white
+      px-5
+      py-4
+      text-slate-900
+      outline-none
+    "
+  />
 
+  <input
+    type="text"
+    placeholder="Service Interest"
+    value={form.service}
+    onChange={(e) =>
+      setForm({ ...form, service: e.target.value })
+    }
+    className="
+      w-full
+      rounded-xl
+      bg-white
+      px-5
+      py-4
+      text-slate-900
+      outline-none
+    "
+  />
 
+  <textarea
+    placeholder="Your message"
+    rows={5}
+    value={form.message}
+    onChange={(e) =>
+      setForm({ ...form, message: e.target.value })
+    }
+    required
+    className="
+      w-full
+      rounded-xl
+      bg-white
+      px-5
+      py-4
+      text-slate-900
+      outline-none
+    "
+  />
 
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="
-                  w-full
-                  rounded-xl
-                  bg-white
-                  px-5
-                  py-4
-                  text-slate-900
-                  outline-none
-                "
-              />
+  <button
+    type="submit"
+    disabled={loading}
+    className="
+      w-full
+      rounded-xl
+      bg-blue-600
+      py-4
+      font-semibold
+      text-white
+      transition
+      hover:bg-blue-700
+      disabled:opacity-60
+    "
+  >
+    {loading ? "Sending..." : "Submit Enquiry"}
+  </button>
 
+  {status && (
+    <p className="text-center text-white">
+      {status}
+    </p>
+  )}
 
-
-              <input
-                type="text"
-                placeholder="Service Interest"
-                className="
-                  w-full
-                  rounded-xl
-                  bg-white
-                  px-5
-                  py-4
-                  text-slate-900
-                  outline-none
-                "
-              />
-
-
-
-              <textarea
-                placeholder="Your message"
-                rows={5}
-                className="
-                  w-full
-                  rounded-xl
-                  bg-white
-                  px-5
-                  py-4
-                  text-slate-900
-                  outline-none
-                "
-              />
-
-
-
-              <button
-                type="button"
-                className="
-                  w-full
-                  rounded-xl
-                  bg-blue-600
-                  py-4
-                  font-semibold
-                  text-white
-                  transition
-                  hover:bg-blue-700
-                "
-              >
-                Submit Enquiry
-              </button>
-
-
-            </form>
+</form>
 
 
           </div>

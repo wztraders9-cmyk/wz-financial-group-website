@@ -1,230 +1,199 @@
-import {
-  UserRound,
-  Lightbulb,
-  ShieldCheck,
-  BriefcaseBusiness,
-} from "lucide-react";
+import { ShieldCheck, Target, Lightbulb, Users } from "lucide-react";
 
 const values = [
   {
-    title: "Client Focus",
+    title: "Integrity",
     description:
-      "We design solutions around the needs of individuals, professionals, creators and businesses.",
-    icon: UserRound,
-  },
-  {
-    title: "Modern Innovation",
-    description:
-      "We use technology and structured processes to create simpler financial experiences.",
-    icon: Lightbulb,
-  },
-  {
-    title: "Security & Trust",
-    description:
-      "We prioritize responsible practices, transparency and protection of client information.",
+      "We believe trust is built through transparency, ethical conduct and responsible financial practices.",
     icon: ShieldCheck,
   },
   {
-    title: "Professional Support",
+    title: "Professional Excellence",
     description:
-      "We provide reliable financial and operational support built around long-term relationships.",
-    icon: BriefcaseBusiness,
+      "Our commitment is to deliver reliable financial guidance and operational support with the highest professional standards.",
+    icon: Target,
   },
+  {
+    title: "Innovation",
+    description:
+      "We embrace technology and modern financial solutions to improve efficiency and create better client experiences.",
+    icon: Lightbulb,
+  },
+  {
+    title: "Client Success",
+    description:
+      "Every solution we provide is focused on helping clients achieve sustainable financial and operational outcomes.",
+    icon: Users,
+  },
+];
+
+const reasons = [
+  "Professional Financial Expertise",
+  "Secure & Confidential Services",
+  "Technology-Driven Solutions",
+  "Personalized Client Support",
+  "Transparent Communication",
+  "Long-Term Partnerships",
 ];
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-white">
-
-
+    <main>
       {/* Hero */}
+      <section className="bg-slate-950 text-white">
+        <div className="max-w-7xl mx-auto px-8 py-24 text-center">
+          <p className="uppercase tracking-[0.25em] text-blue-400 text-sm font-semibold">
+            ABOUT US
+          </p>
 
-      <section className="max-w-7xl mx-auto px-8 py-24">
+          <h1 className="mt-6 text-5xl font-bold leading-tight">
+            Helping You Make Financial Decisions With Confidence
+          </h1>
 
-        <p className="text-blue-600 font-semibold uppercase tracking-widest">
-          About WZ Financial Group
-        </p>
-
-
-        <h1 className="text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mt-6 max-w-5xl">
-          Building modern financial experiences through guidance,
-          technology and trusted support
-        </h1>
-
-
-        <p className="text-gray-600 text-xl mt-8 max-w-3xl leading-9">
-          WZ Financial Group is a modern financial services company helping
-          individuals, professionals, creators and businesses manage financial
-          activities through practical solutions and digital innovation.
-        </p>
-
-      </section>
-
-
-
-
-      {/* Who We Are */}
-
-      <section className="max-w-7xl mx-auto px-8 pb-24">
-
-        <div className="grid lg:grid-cols-2 gap-16">
-
-
-          <div>
-
-            <h2 className="text-4xl font-bold text-slate-900">
-              Who we are
-            </h2>
-
-
-            <p className="text-gray-600 mt-6 text-lg leading-8">
-              WZ Financial Group combines financial guidance, technology
-              solutions and operational support to help clients navigate
-              today's evolving financial environment.
-            </p>
-
-
-            <p className="text-gray-600 mt-5 text-lg leading-8">
-              Our approach focuses on making financial activities more
-              organized, accessible and secure through professional support
-              and modern digital solutions.
-            </p>
-
-          </div>
-
-
-
-          <div
-            className="
-              rounded-3xl
-              bg-slate-900
-              p-10
-              text-white
-            "
-          >
-
-            <h3 className="text-2xl font-bold">
-              Our Focus
-            </h3>
-
-
-            <div className="mt-6 space-y-5 text-gray-300">
-
-              <p>
-                Financial guidance and personal support
-              </p>
-
-              <p>
-                Digital financial solutions
-              </p>
-
-              <p>
-                Creator and professional support
-              </p>
-
-              <p>
-                Business and operational solutions
-              </p>
-
-            </div>
-
-
-          </div>
-
-
+          <p className="mt-8 max-w-3xl mx-auto text-lg text-slate-300 leading-8">
+            WZ Financial Group delivers professional financial advisory,
+            operational support and technology-driven solutions designed to
+            help individuals and businesses operate with greater confidence,
+            efficiency and long-term success.
+          </p>
         </div>
-
       </section>
 
+      {/* Our Story */}
+      <section className="py-24">
+        <div className="max-w-5xl mx-auto px-8 text-center">
+          <h2 className="text-4xl font-bold text-slate-900">
+            Our Story
+          </h2>
 
+          <p className="mt-8 text-lg leading-8 text-slate-600">
+            WZ Financial Group was established to provide modern financial
+            support, operational expertise and technology solutions that help
+            individuals and businesses navigate an increasingly digital
+            financial environment.
+          </p>
 
+          <p className="mt-6 text-lg leading-8 text-slate-600">
+            By combining practical financial knowledge with innovative
+            technology, we deliver efficient, transparent and client-focused
+            solutions that simplify financial processes and support informed
+            decision-making.
+          </p>
+        </div>
+      </section>
 
-
-      {/* Values */}
-
+      {/* Mission & Values */}
       <section className="bg-slate-50 py-24">
-
         <div className="max-w-7xl mx-auto px-8">
-
-
-          <div className="text-center max-w-3xl mx-auto">
-
-            <p className="text-blue-600 font-semibold uppercase tracking-widest">
-              Our Principles
-            </p>
-
-
-            <h2 className="text-4xl font-bold text-slate-900 mt-4">
-              Built on trust, innovation and professionalism
+          <div className="text-center">
+            <h2 className="text-4xl font-bold text-slate-900">
+              Our Values
             </h2>
 
+            <p className="mt-6 text-lg text-slate-600">
+              The principles that guide every client relationship.
+            </p>
           </div>
 
-
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-
-
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
             {values.map((value) => {
-
               const Icon = value.icon;
 
               return (
-
                 <div
                   key={value.title}
-                  className="
-                    bg-white
-                    rounded-2xl
-                    border
-                    border-slate-200
-                    p-7
-                    hover:shadow-xl
-                    transition
-                  "
+                  className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200"
                 >
-
-                  <div
-                    className="
-                      flex
-                      h-12
-                      w-12
-                      items-center
-                      justify-center
-                      rounded-xl
-                      bg-blue-50
-                      text-blue-600
-                    "
-                  >
-                    <Icon size={24}/>
+                  <div className="w-14 h-14 rounded-xl bg-blue-100 flex items-center justify-center">
+                    <Icon className="w-7 h-7 text-blue-700" />
                   </div>
 
-
-                  <h3 className="text-xl font-bold text-slate-900 mt-6">
+                  <h3 className="mt-6 text-xl font-semibold">
                     {value.title}
                   </h3>
 
-
-                  <p className="text-gray-600 mt-4 leading-7">
+                  <p className="mt-4 text-slate-600 leading-7">
                     {value.description}
                   </p>
-
-
                 </div>
-
               );
-
             })}
-
-
           </div>
-
-
         </div>
-
       </section>
 
+      {/* Our Approach */}
+      <section className="py-24">
+        <div className="max-w-6xl mx-auto px-8 text-center">
+          <h2 className="text-4xl font-bold">
+            Our Approach
+          </h2>
 
+          <div className="grid md:grid-cols-4 gap-10 mt-16">
+            {["Understand", "Assess", "Deliver", "Support"].map((step, index) => (
+              <div key={step}>
+                <div className="w-16 h-16 mx-auto rounded-full bg-blue-600 text-white flex items-center justify-center text-xl font-bold">
+                  {index + 1}
+                </div>
+
+                <h3 className="mt-6 text-xl font-semibold">
+                  {step}
+                </h3>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Us */}
+      <section className="bg-slate-950 text-white py-24">
+        <div className="max-w-7xl mx-auto px-8">
+          <div className="text-center">
+            <h2 className="text-4xl font-bold">
+              Why Choose WZ Financial Group
+            </h2>
+
+            <p className="mt-6 text-slate-300 text-lg">
+              Built on professionalism, trust and long-term client relationships.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-16">
+            {reasons.map((reason) => (
+              <div
+                key={reason}
+                className="border border-slate-700 rounded-xl p-6"
+              >
+                <p className="text-lg font-medium">
+                  {reason}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-24">
+        <div className="max-w-4xl mx-auto px-8 text-center">
+          <h2 className="text-4xl font-bold text-slate-900">
+            Let's Build a Stronger Financial Future Together
+          </h2>
+
+          <p className="mt-6 text-lg text-slate-600 leading-8">
+            Whether you're an individual seeking financial guidance or a
+            business looking for operational support, we're here to help you
+            move forward with confidence.
+          </p>
+
+          <a
+            href="/contact"
+            className="inline-flex mt-10 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold transition"
+          >
+            Contact Us
+          </a>
+        </div>
+      </section>
     </main>
   );
 }

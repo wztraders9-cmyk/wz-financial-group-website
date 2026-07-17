@@ -8,13 +8,13 @@ import Footer from "./components/Footer";
 export const metadata: Metadata = {
 
   title: {
-    default: "WZ Financial Group | Financial Guidance & Digital Solutions",
-    template: "%s | WZ Financial Group",
-  },
+  default: "WZ Financial Group | Financial Services & Professional Support",
+  template: "%s | WZ Financial Group",
+},
 
 
   description:
-    "WZ Financial Group provides modern financial guidance, digital solutions and professional support services for individuals, creators, professionals and businesses.",
+  "WZ Financial Group provides financial guidance, compliance support, operational assistance and digital solutions designed for individuals and professionals.",
 
 
   keywords: [
@@ -39,14 +39,14 @@ export const metadata: Metadata = {
 
 
   openGraph: {
-    title:
-      "WZ Financial Group | Financial Guidance & Digital Solutions",
+  title:
+    "WZ Financial Group | Financial Services & Professional Support",
 
-    description:
-      "Modern financial guidance, digital solutions and professional support services for individuals, creators, professionals and businesses.",
+  description:
+    "Financial guidance, compliance support, operational assistance and digital solutions for individuals and professionals.",
 
-    type: "website",
-  },
+  type: "website",
+},
 
 
   robots: {
