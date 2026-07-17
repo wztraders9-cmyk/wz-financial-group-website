@@ -62,12 +62,12 @@ export default function ServicesPage() {
 
 
         <h1 className="text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mt-6 max-w-5xl">
-          Financial solutions designed around modern needs
+          Digital solutions designed around modern needs
         </h1>
 
 
         <p className="text-gray-600 text-xl mt-8 max-w-3xl leading-9">
-          WZ Financial Group provides financial guidance, digital solutions
+          WZ Financial Group provides digital solutions, digital solutions
           and operational support designed for individuals, professionals,
           creators and businesses.
         </p>
