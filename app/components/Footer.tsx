@@ -10,15 +10,15 @@ export default function Footer() {
             </h3>
 
             <p className="mt-5 leading-7">
-  Digital solutions, operational support and financial technology
-  services designed for individuals, professionals and businesses.
-</p>
+              Digital solutions, operational support and financial technology
+              services designed for individuals, professionals and businesses.
+            </p>
 
-<p className="mt-4 text-sm text-gray-400 leading-6">
-  WZ Financial Group provides technology solutions and operational
-  support services. We do not provide personal financial product
-  advice, investment recommendations or asset management services.
-</p>
+            <p className="mt-4 text-sm text-gray-400 leading-6">
+              WZ Financial Group provides technology solutions and operational
+              support services. We do not provide personal financial product
+              advice, investment recommendations or asset management services.
+            </p>
           </div>
 
           {/* Company */}
@@ -61,8 +61,8 @@ export default function Footer() {
             </h4>
 
             <ul className="space-y-3">
-              <li>Financial Advisory</li>
-              <li>Financial Operations Support</li>
+              <li>Financial Technology Solutions</li>
+              <li>Operational Support</li>
               <li>Identity Verification Support</li>
               <li>Risk & Compliance Support</li>
             </ul>
@@ -77,16 +77,16 @@ export default function Footer() {
           </p>
 
           {/* Center */}
-<p className="text-sm text-gray-500 text-center">
-  Operated by{" "}
-  <span className="font-medium text-gray-300">
-    WZ Traders Pty Ltd
-  </span>
-  <br />
-  ACN: 683 347 579 · ABN: 27 683 347 579
-  <br />
-  Australia
-</p>
+          <p className="text-sm text-gray-500 text-center">
+            Operated by{" "}
+            <span className="font-medium text-gray-300">
+              WZ Traders Pty Ltd
+            </span>
+            <br />
+            ACN: 683 347 579 · ABN: 27 683 347 579
+            <br />
+            Australia
+          </p>
 
           {/* Right */}
           <div className="flex items-center gap-4 text-sm">
