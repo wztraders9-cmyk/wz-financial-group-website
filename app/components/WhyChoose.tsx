@@ -1,29 +1,29 @@
 import {
   ShieldCheck,
-  UserRound,
+  Workflow,
   Smartphone,
   Handshake,
 } from "lucide-react";
 
 const features = [
   {
-    title: "Trusted Financial Support",
-    text: "Providing practical guidance and support designed to help individuals and professionals manage financial activities with confidence.",
+    title: "Reliable Processes",
+    text: "Structured workflows and operational support designed to help clients manage activities more efficiently.",
     icon: ShieldCheck,
   },
   {
-    title: "Personalized Solutions",
-    text: "Understanding each client's goals and creating solutions that fit their unique financial needs and circumstances.",
-    icon: UserRound,
+    title: "Practical Solutions",
+    text: "Technology and support services built around real operational needs and business requirements.",
+    icon: Workflow,
   },
   {
     title: "Digital-First Approach",
-    text: "Using modern technology solutions to simplify processes, improve accessibility and support better financial experiences.",
+    text: "Modern technology solutions that simplify processes, improve organization and support better experiences.",
     icon: Smartphone,
   },
   {
-    title: "Long-Term Relationships",
-    text: "Focused on professionalism, transparency and building trusted relationships with clients and partners.",
+    title: "Trusted Relationships",
+    text: "Focused on professionalism, transparency and long-term relationships with clients and partners.",
     icon: Handshake,
   },
 ];
@@ -43,14 +43,14 @@ export default function WhyChoose() {
 
 
           <h2 className="text-4xl lg:text-5xl font-bold tracking-tight text-slate-900 mt-4">
-            A modern approach to financial support
+            Technology-driven solutions built around your needs
           </h2>
 
 
           <p className="text-gray-600 text-lg leading-8 mt-6">
-            We combine professional guidance, digital solutions and
-            personalized support to help individuals, professionals and
-            businesses navigate today's financial environment.
+            We combine digital solutions, operational expertise and
+            professional support to help individuals, professionals and
+            businesses improve efficiency and manage modern workflows.
           </p>
 
         </div>
