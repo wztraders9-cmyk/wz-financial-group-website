@@ -1,88 +1,56 @@
-import { ArrowRight, Sparkles } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+
 
 export default function CTA() {
   return (
-    <section className="bg-gradient-to-br from-blue-700 to-blue-600 py-24">
+    <section className="py-24 bg-[#0f3d5e]">
 
-      <div className="max-w-5xl mx-auto px-8 text-center text-white">
-
-
-        <div className="flex justify-center mb-6">
-
-          <div
-            className="
-              flex
-              h-14
-              w-14
-              items-center
-              justify-center
-              rounded-2xl
-              bg-white/10
-            "
-          >
-            <Sparkles size={28} />
-          </div>
-
-        </div>
+      <div className="max-w-5xl mx-auto px-6 lg:px-8 text-center">
 
 
+        <div className="mx-auto mb-8 h-1 w-16 rounded-full bg-[#c28b3c]" />
 
-        <h2 className="text-4xl lg:text-5xl font-bold tracking-tight">
-          Ready to improve your digital operations?
+
+        <h2 className="text-4xl md:text-5xl font-bold text-white leading-tight">
+          Need help with a product request?
         </h2>
 
 
+        <p className="mt-6 max-w-3xl mx-auto text-lg text-slate-200 leading-8">
 
-        <p className="mt-6 text-xl leading-8 text-blue-100 max-w-3xl mx-auto">
-          Whether you need technology solutions, operational support or
-          digital workflows, WZ Financial Group provides practical solutions
-          designed around your requirements.
+          Share your requirements with us and we will review your request
+          to discuss whether we can assist with procurement, sourcing
+          support and logistics coordination.
+
         </p>
 
 
 
-        <div className="flex flex-wrap justify-center gap-5 mt-10">
 
+        <div className="mt-8">
 
           <a
             href="/contact"
             className="
-              bg-white
-              text-blue-700
-              px-8
-              py-4
-              rounded-xl
-              font-semibold
-              flex
+              inline-flex
               items-center
               gap-2
+              rounded-xl
+              bg-white
+              px-8
+              py-4
+              text-sm
+              font-semibold
+              text-[#0f3d5e]
               transition
-              hover:bg-gray-100
+              hover:bg-slate-100
             "
           >
-            Get Started
+
+            Start Your Request
 
             <ArrowRight size={18} />
 
-          </a>
-
-
-
-          <a
-            href="/services"
-            className="
-              border
-              border-white/50
-              px-8
-              py-4
-              rounded-xl
-              font-semibold
-              transition
-              hover:bg-white
-              hover:text-blue-700
-            "
-          >
-            Explore Services
           </a>
 
 
@@ -90,6 +58,7 @@ export default function CTA() {
 
 
       </div>
+
 
     </section>
   );

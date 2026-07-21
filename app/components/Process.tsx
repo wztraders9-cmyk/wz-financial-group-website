@@ -1,120 +1,121 @@
 import {
+  MessageSquare,
   Search,
-  Lightbulb,
-  Headphones,
-  TrendingUp,
+  ShoppingCart,
+  Truck,
 } from "lucide-react";
+
 
 const steps = [
   {
     number: "01",
     title: "Understand Requirements",
-    text: "We review your objectives, challenges and operational needs to understand the right approach.",
-    icon: Search,
+    description:
+      "We review your product needs, preferences and procurement requirements.",
+    icon: MessageSquare,
   },
   {
     number: "02",
-    title: "Design Solutions",
-    text: "We develop practical technology solutions and workflows designed around your requirements.",
-    icon: Lightbulb,
+    title: "Research & Review",
+    description:
+      "We explore available options and discuss suitable procurement approaches.",
+    icon: Search,
   },
   {
     number: "03",
-    title: "Implement & Support",
-    text: "We assist with implementation, organization and ongoing operational support when required.",
-    icon: Headphones,
+    title: "Purchase Coordination",
+    description:
+      "We assist with organising purchase details and coordinating the next steps.",
+    icon: ShoppingCart,
   },
   {
     number: "04",
-    title: "Create Long-Term Value",
-    text: "We focus on reliable solutions that improve efficiency and support future growth.",
-    icon: TrendingUp,
+    title: "Logistics Support",
+    description:
+      "We help coordinate delivery arrangements and logistics considerations.",
+    icon: Truck,
   },
 ];
 
+
 export default function Process() {
   return (
-    <section className="bg-slate-900 py-24 text-white">
+    <section className="py-24 bg-slate-50">
 
-      <div className="max-w-7xl mx-auto px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
 
-        <div className="max-w-3xl mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16">
 
-          <p className="text-blue-400 uppercase tracking-widest font-semibold">
-            Our Process
+
+          <p className="uppercase tracking-[0.25em] text-[#0f3d5e] font-semibold text-sm">
+            HOW IT WORKS
           </p>
 
 
-          <h2 className="text-4xl lg:text-5xl font-bold mt-4">
-            A structured approach to better operations
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-5">
+            A simple procurement process
           </h2>
 
 
-          <p className="text-gray-400 mt-6 text-lg leading-8">
-            We combine technology, operational expertise and ongoing support
-            to deliver practical solutions built around client requirements.
+          <p className="mt-6 text-lg text-slate-600 leading-8">
+
+            We follow a structured approach to help make product sourcing
+            and purchasing easier to manage.
+
           </p>
+
 
         </div>
 
 
 
-        <div className="grid md:grid-cols-4 gap-8">
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
 
           {steps.map((step) => {
 
             const Icon = step.icon;
 
+
             return (
 
               <div
                 key={step.number}
-                className="
-                  rounded-2xl
-                  bg-slate-800
-                  p-8
-                  border
-                  border-slate-700
-                  transition-all
-                  duration-300
-                  hover:-translate-y-1
-                  hover:shadow-xl
-                "
+                className="relative rounded-2xl bg-white border border-slate-200 p-8"
               >
 
-                <div className="flex items-center justify-between">
 
-                  <span className="text-4xl font-bold text-blue-400">
+                <div className="flex items-center justify-between mb-6">
+
+
+                  <div className="w-12 h-12 rounded-xl bg-[#0f3d5e] flex items-center justify-center">
+
+                    <Icon
+                      size={24}
+                      className="text-white"
+                    />
+
+                  </div>
+
+
+                  <span className="text-4xl font-bold text-slate-100">
                     {step.number}
                   </span>
 
-
-                  <div
-                    className="
-                      flex
-                      h-11
-                      w-11
-                      items-center
-                      justify-center
-                      rounded-xl
-                      bg-blue-600
-                    "
-                  >
-                    <Icon size={22} />
-                  </div>
 
                 </div>
 
 
 
-                <h3 className="text-xl font-semibold mt-8">
+                <h3 className="text-xl font-bold text-slate-900">
                   {step.title}
                 </h3>
 
 
-                <p className="text-gray-400 mt-4 leading-7">
-                  {step.text}
+                <p className="mt-4 text-slate-600 leading-7">
+                  {step.description}
                 </p>
 
 
@@ -123,6 +124,7 @@ export default function Process() {
             );
 
           })}
+
 
         </div>
 

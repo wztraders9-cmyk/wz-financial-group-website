@@ -1,202 +1,184 @@
 import {
-  ChartLine,
-  WalletCards,
-  Smartphone,
-  ShieldCheck,
-  MonitorSmartphone,
-  BriefcaseBusiness,
+  Search,
+  FileSearch,
+  ShoppingCart,
+  Truck,
+  PackageSearch,
 } from "lucide-react";
+import ServiceProcess from "../components/ServiceProcess";
 
 const services = [
   {
-    title: "Financial Support",
+    title: "Product Sourcing",
     description:
-      "Personal financial support to help individuals understand options, organize finances and make informed decisions.",
-    icon: ChartLine,
+      "We help review product requirements and identify suitable sourcing options based on your needs.",
+    icon: Search,
   },
   {
-    title: "Personal Financial Support",
+    title: "Supplier Research",
     description:
-      "Assistance with financial administration, documentation and everyday financial activities.",
-    icon: WalletCards,
+      "We assist with reviewing supplier information and available options to support better purchasing decisions.",
+    icon: FileSearch,
   },
   {
-    title: "Digital Financial Solutions",
+    title: "Purchase Coordination",
     description:
-      "Technology-driven solutions designed to make financial activities simpler, faster and more accessible.",
-    icon: Smartphone,
+      "We help coordinate quotations, communication and purchasing activities throughout the process.",
+    icon: ShoppingCart,
   },
   {
-    title: "Financial Security & Protection",
+    title: "Logistics Support",
     description:
-      "Guidance on secure financial practices, protecting personal information and reducing risks associated with digital financial activities.",
-    icon: ShieldCheck,
+      "We assist with logistics coordination, shipment communication and delivery arrangements.",
+    icon: Truck,
   },
   {
-    title: "Creator & Digital Professional Support",
+    title: "Custom Procurement Support",
     description:
-      "Financial and operational support for creators, freelancers and digital professionals managing modern income streams.",
-    icon: MonitorSmartphone,
-  },
-  {
-    title: "Business Support Solutions",
-    description:
-      "Financial and operational support services for entrepreneurs and growing businesses.",
-    icon: BriefcaseBusiness,
+      "Have a specific requirement? We review your request and discuss how we may be able to assist.",
+    icon: PackageSearch,
   },
 ];
 
 export default function ServicesPage() {
   return (
-    <main className="min-h-screen bg-white">
-
+    <main>
 
       {/* Hero */}
 
-      <section className="max-w-7xl mx-auto px-8 py-24">
+      <section className="bg-gradient-to-b from-slate-50 to-white py-24">
 
+        <div className="max-w-6xl mx-auto px-8">
 
-        <p className="text-blue-600 font-semibold uppercase tracking-widest">
-          Our Services
-        </p>
+          <p className="uppercase tracking-[0.25em] text-[#c28b3c] font-semibold">
+            OUR SERVICES
+          </p>
 
+          <h1 className="mt-6 max-w-4xl text-5xl lg:text-6xl font-bold tracking-tight text-[#0f3d5e]">
+            Procurement support from sourcing to coordination
+          </h1>
 
-        <h1 className="text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 mt-6 max-w-5xl">
-          Digital solutions designed around modern needs
-        </h1>
+          <p className="mt-8 max-w-3xl text-xl leading-9 text-slate-600">
+            Elite Source Point provides procurement, sourcing and logistics
+            support to help individuals manage product research, purchasing
+            coordination and delivery arrangements.
+          </p>
 
-
-        <p className="text-gray-600 text-xl mt-8 max-w-3xl leading-9">
-          WZ Financial Group provides digital solutions, digital solutions
-          and operational support designed for individuals, professionals,
-          creators and businesses.
-        </p>
-
+        </div>
 
       </section>
 
 
 
-
-
       {/* Services */}
 
-      <section className="bg-slate-50 py-24">
-
+      <section className="py-24 bg-white">
 
         <div className="max-w-7xl mx-auto px-8">
 
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
+          <div className="grid lg:grid-cols-2 gap-8">
 
             {services.map((service) => {
-
               const Icon = service.icon;
 
               return (
-
                 <div
                   key={service.title}
                   className="
-                    bg-white
-                    rounded-2xl
+                    rounded-3xl
                     border
                     border-slate-200
-                    p-8
-                    transition-all
-                    duration-300
-                    hover:-translate-y-1
-                    hover:shadow-xl
+                    p-10
+                    transition
+                    hover:shadow-lg
                   "
                 >
 
                   <div
                     className="
                       flex
-                      h-12
-                      w-12
+                      h-16
+                      w-16
                       items-center
                       justify-center
-                      rounded-xl
-                      bg-blue-50
-                      text-blue-600
+                      rounded-2xl
+                      bg-slate-100
+                      mb-8
                     "
                   >
-                    <Icon size={25}/>
+                    <Icon
+                      size={30}
+                      className="text-[#0f3d5e]"
+                    />
                   </div>
 
 
-                  <h2 className="text-xl font-bold text-slate-900 mt-6">
+                  <h2 className="text-3xl font-bold text-[#0f3d5e]">
                     {service.title}
                   </h2>
 
 
-                  <p className="text-gray-600 mt-4 leading-7">
+                  <p className="mt-6 text-slate-600 leading-8">
                     {service.description}
                   </p>
 
-
                 </div>
-
               );
-
             })}
-
 
           </div>
 
-
         </div>
-
 
       </section>
 
 
 
+      {/* Process */}
+
+      <ServiceProcess />
+
 
 
       {/* CTA */}
 
-      <section className="py-20">
-
+      <section className="py-24 bg-slate-50">
 
         <div className="max-w-4xl mx-auto px-8 text-center">
 
-
-          <h2 className="text-4xl font-bold text-slate-900">
-            Solutions designed around your needs
+          <h2 className="text-4xl font-bold text-[#0f3d5e]">
+            Have a product request?
           </h2>
 
 
-          <p className="text-gray-600 mt-5 text-lg leading-8">
-            Whether you are seeking personal financial support or looking
-            for operational solutions, WZ Financial Group provides structured
-            services designed around your goals.
+          <p className="mt-6 text-lg text-slate-600 leading-8">
+
+            Submit your requirements and we will review your request and
+            discuss whether we can assist with sourcing and procurement
+            support.
+
           </p>
 
 
           <a
             href="/contact"
             className="
-              inline-flex
-              mt-8
-              bg-blue-600
-              text-white
+              inline-block
+              mt-10
+              rounded-xl
+              bg-[#0f3d5e]
               px-8
               py-4
-              rounded-xl
               font-semibold
-              hover:bg-blue-700
+              text-white
               transition
+              hover:bg-[#0c314c]
             "
           >
-            Get Started
+            Contact Us
           </a>
 
-
         </div>
-
 
       </section>
 

@@ -1,159 +1,118 @@
 import {
-  ArrowRight,
-  Workflow,
-  FileCheck,
-  Smartphone,
-  ShieldCheck,
-  MonitorSmartphone,
-  BriefcaseBusiness,
+  Search,
+  Users,
+  ShoppingCart,
+  Truck,
+  ClipboardCheck,
 } from "lucide-react";
 
 
 const services = [
   {
-    title: "Digital Solutions",
+    title: "Product Sourcing",
     description:
-      "Technology solutions designed to simplify digital processes, improve efficiency and support modern financial workflows.",
-    icon: Smartphone,
+      "Assistance identifying suitable products based on your requirements and preferences.",
+    icon: Search,
   },
   {
-    title: "Operational Support",
+    title: "Supplier Research",
     description:
-      "Structured operational assistance including process management, administration and workflow improvements.",
-    icon: Workflow,
+      "Support reviewing potential suppliers and gathering relevant product information.",
+    icon: Users,
   },
   {
-    title: "Identity Verification Support",
+    title: "Purchase Coordination",
     description:
-      "Digital verification workflows that help organizations improve onboarding processes and maintain accurate records.",
-    icon: FileCheck,
+      "Help coordinating purchasing steps, communication and order requirements.",
+    icon: ShoppingCart,
   },
   {
-    title: "Risk & Compliance Support",
+    title: "Logistics Support",
     description:
-      "Technology-enabled tools and operational support to assist with documentation, monitoring and internal processes.",
-    icon: ShieldCheck,
+      "Assistance coordinating delivery arrangements and logistics considerations.",
+    icon: Truck,
   },
   {
-    title: "Creator & Professional Support",
+    title: "Custom Procurement Support",
     description:
-      "Operational tools and digital support for creators, freelancers and professionals managing online activities.",
-    icon: MonitorSmartphone,
-  },
-  {
-    title: "Business Support Solutions",
-    description:
-      "Digital infrastructure and operational solutions designed to support growing businesses and entrepreneurs.",
-    icon: BriefcaseBusiness,
+      "For specific requests, we review your needs and discuss possible procurement options.",
+    icon: ClipboardCheck,
   },
 ];
 
 
 export default function Services() {
   return (
-    <section className="bg-white py-24">
+    <section className="py-24 bg-slate-50">
 
-      <div className="max-w-7xl mx-auto px-8">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
-        {/* Header */}
 
-        <div className="max-w-3xl mb-14">
+        <div className="text-center max-w-3xl mx-auto mb-16">
 
-          <p className="text-blue-600 font-semibold uppercase tracking-widest">
-            Our Services
+          <p className="uppercase tracking-[0.25em] text-[#0f3d5e] font-semibold text-sm">
+            OUR SERVICES
           </p>
 
 
-          <h2 className="mt-4 text-4xl lg:text-5xl font-bold tracking-tight text-slate-900">
-            Technology and operational solutions for modern businesses and professionals
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-900 mt-5">
+            Procurement support designed around your needs
           </h2>
 
 
-          <p className="mt-6 text-lg leading-8 text-gray-600">
-            WZ Financial Group provides digital solutions, operational support
-            and technology-enabled workflows designed to improve efficiency,
-            organization and business processes.
+          <p className="mt-6 text-lg text-slate-600 leading-8">
+
+            We help individuals simplify the process of finding products,
+            coordinating purchases and managing procurement requirements.
+
           </p>
+
 
         </div>
 
 
-        {/* Cards */}
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8">
+
 
           {services.map((service) => {
 
             const Icon = service.icon;
 
+
             return (
 
               <div
                 key={service.title}
-                className="
-                  group
-                  rounded-2xl
-                  border
-                  border-slate-200
-                  bg-white
-                  p-8
-                  transition-all
-                  duration-300
-                  hover:-translate-y-1
-                  hover:shadow-xl
-                "
+                className="rounded-2xl bg-white border border-slate-200 p-8 hover:shadow-lg transition"
               >
 
-                <div
-                  className="
-                    flex
-                    h-12
-                    w-12
-                    items-center
-                    justify-center
-                    rounded-xl
-                    bg-blue-50
-                    text-blue-600
-                    transition
-                    group-hover:bg-blue-600
-                    group-hover:text-white
-                  "
-                >
 
-                  <Icon size={25}/>
+                <div className="w-14 h-14 rounded-xl bg-[#e8f1f8] flex items-center justify-center mb-6">
+
+                  <Icon
+                    size={28}
+                    className="text-[#0f3d5e]"
+                  />
 
                 </div>
 
 
-                <h3 className="mt-6 text-xl font-semibold text-slate-900">
+
+                <h3 className="text-xl font-bold text-slate-900">
+
                   {service.title}
+
                 </h3>
 
 
-                <p className="mt-4 text-gray-600 leading-7">
+
+                <p className="mt-4 text-slate-600 leading-7">
+
                   {service.description}
+
                 </p>
 
-
-                <a
-                  href="/contact"
-                  className="
-                    mt-6
-                    inline-flex
-                    items-center
-                    gap-2
-                    text-sm
-                    font-semibold
-                    text-blue-600
-                    transition-all
-                    hover:gap-3
-                  "
-                >
-                  Learn More
-
-                  <ArrowRight size={16}/>
-
-                </a>
 
               </div>
 
@@ -161,47 +120,6 @@ export default function Services() {
 
           })}
 
-        </div>
-
-
-        {/* CTA */}
-
-        <div className="mt-16 rounded-3xl bg-slate-900 p-10 text-center">
-
-          <h3 className="text-3xl font-bold text-white">
-            Need technology or operational support?
-          </h3>
-
-
-          <p className="mt-4 max-w-2xl mx-auto text-gray-400">
-            Explore how WZ Financial Group can help improve workflows,
-            digital processes and operational efficiency.
-          </p>
-
-
-          <a
-            href="/contact"
-            className="
-              mt-8
-              inline-flex
-              items-center
-              gap-2
-              rounded-xl
-              bg-blue-600
-              px-8
-              py-4
-              font-semibold
-              text-white
-              hover:bg-blue-700
-              transition
-            "
-          >
-
-            Contact Us
-
-            <ArrowRight size={18}/>
-
-          </a>
 
         </div>
 

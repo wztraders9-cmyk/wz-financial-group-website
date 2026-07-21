@@ -1,201 +1,248 @@
-import {
-  ArrowRight,
-  ShieldCheck,
-  Workflow,
-  Smartphone,
-  Users,
-} from "lucide-react";
+import { ArrowRight, CheckCircle } from "lucide-react";
+
+
+const trustPoints = [
+  "Procurement Support",
+  "Supplier Coordination",
+  "Logistics Assistance",
+  "Personal Service",
+];
+
 
 export default function Hero() {
   return (
-    <section className="bg-gradient-to-br from-slate-50 via-white to-blue-50">
+    <section className="bg-gradient-to-b from-slate-50 to-white">
 
-      <div className="max-w-7xl mx-auto px-8 py-28">
 
-        <div className="grid lg:grid-cols-2 gap-20 items-center">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-20 lg:py-24">
 
-          {/* Left */}
+
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+
+
+          {/* Left Content */}
+
 
           <div>
 
-            <span className="inline-flex items-center rounded-full bg-blue-50 text-blue-700 px-4 py-2 text-sm font-semibold">
-              Digital Solutions & Operational Support
-            </span>
+
+            <div
+              className="
+                inline-flex
+                items-center
+                rounded-full
+                bg-slate-100
+                px-4
+                py-2
+                text-sm
+                font-medium
+                text-[#0f3d5e]
+                mb-6
+              "
+            >
+              Procurement • Sourcing • Logistics Support
+            </div>
 
 
-            <h1 className="mt-8 text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-slate-900">
-              Technology solutions that simplify modern financial operations.
+
+
+            <h1
+              className="
+                text-4xl
+                md:text-5xl
+                font-bold
+                leading-tight
+                text-[#0f3d5e]
+              "
+            >
+
+              Procurement made simple.
+              <br />
+
+              <span className="text-[#c28b3c]">
+                Support throughout the process.
+              </span>
+
             </h1>
 
 
-            <p className="mt-8 text-xl leading-9 text-gray-600">
-              WZ Financial Group provides digital solutions, operational
-              support and technology-enabled workflows designed for
-              individuals, professionals, creators and businesses.
+
+
+
+            <p className="mt-6 max-w-xl text-base md:text-lg text-slate-600 leading-relaxed">
+
+              Elite Source Point helps individuals source products,
+              coordinate purchases and manage logistics through a structured
+              procurement process.
+
             </p>
 
 
-            <div className="flex flex-wrap gap-5 mt-10">
+
+
+
+            <div className="mt-8 flex flex-col sm:flex-row gap-4">
+
 
               <a
                 href="/contact"
                 className="
-                  bg-blue-600
-                  hover:bg-blue-700
-                  text-white
-                  px-8
-                  py-4
-                  rounded-xl
-                  font-semibold
-                  flex
+                  inline-flex
                   items-center
+                  justify-center
                   gap-2
+                  rounded-xl
+                  bg-[#0f3d5e]
+                  px-6
+                  py-3
+                  text-sm
+                  font-semibold
+                  text-white
                   transition
+                  hover:bg-[#0c314c]
                 "
               >
-                Get Started
+
+                Start Your Request
 
                 <ArrowRight size={18} />
 
               </a>
 
 
+
+
               <a
                 href="/services"
                 className="
+                  inline-flex
+                  items-center
+                  justify-center
+                  rounded-xl
                   border
                   border-slate-300
-                  hover:border-blue-600
-                  hover:text-blue-600
-                  px-8
-                  py-4
-                  rounded-xl
+                  px-6
+                  py-3
+                  text-sm
                   font-semibold
+                  text-slate-700
                   transition
+                  hover:bg-slate-50
                 "
               >
+
                 Explore Services
+
               </a>
 
+
             </div>
+
+
+
+
+
+            <div className="mt-10 grid grid-cols-2 gap-4">
+
+
+              {trustPoints.map((item) => (
+
+                <div
+                  key={item}
+                  className="flex items-center gap-2 text-sm text-slate-600"
+                >
+
+                  <CheckCircle
+                    size={17}
+                    className="text-[#c28b3c]"
+                  />
+
+                  {item}
+
+                </div>
+
+              ))}
+
+
+            </div>
+
+
 
           </div>
 
 
-          {/* Right */}
-
-          <div>
-
-            <div className="bg-slate-900 rounded-[32px] p-10 shadow-2xl">
-
-              <div className="flex items-center justify-between">
-
-                <h2 className="text-2xl font-bold text-white">
-                  Why WZ Financial Group
-                </h2>
-
-                <ShieldCheck className="text-blue-400" size={28} />
-
-              </div>
 
 
-              <p className="text-gray-400 mt-3">
-                Practical technology and operational solutions built for
-                modern businesses and professionals.
+
+
+
+          {/* Right Image */}
+
+
+          <div className="relative">
+
+
+            <div className="overflow-hidden rounded-3xl shadow-xl">
+
+
+              <img
+                src="/images/hero-procurement.jpg"
+                alt="Procurement and sourcing support"
+                className="h-[520px] w-full object-cover"
+              />
+
+
+            </div>
+
+
+
+
+
+
+            {/* Floating Card */}
+
+
+            <div
+              className="
+                absolute
+                bottom-6
+                left-6
+                right-6
+                rounded-2xl
+                bg-white
+                p-5
+                shadow-lg
+              "
+            >
+
+
+              <p className="text-sm font-semibold text-[#0f3d5e]">
+                Structured Procurement Support
               </p>
 
 
-              <div className="mt-8 space-y-5">
 
+              <p className="mt-2 text-sm text-slate-600">
 
-                <div className="bg-slate-800 rounded-2xl p-5 flex items-center gap-5">
+                Helping organise product research, purchase coordination
+                and logistics assistance.
 
-                  <div className="bg-blue-600 rounded-xl p-3">
-
-                    <Workflow className="text-white" size={24} />
-
-                  </div>
-
-
-                  <div>
-
-                    <h3 className="text-white font-semibold">
-                      Operational Support
-                    </h3>
-
-
-                    <p className="text-gray-400 text-sm mt-1">
-                      Structured workflows that improve efficiency.
-                    </p>
-
-                  </div>
-
-                </div>
-
-
-
-                <div className="bg-slate-800 rounded-2xl p-5 flex items-center gap-5">
-
-                  <div className="bg-blue-600 rounded-xl p-3">
-
-                    <Smartphone className="text-white" size={24} />
-
-                  </div>
-
-
-                  <div>
-
-                    <h3 className="text-white font-semibold">
-                      Digital Solutions
-                    </h3>
-
-
-                    <p className="text-gray-400 text-sm mt-1">
-                      Technology designed to simplify processes.
-                    </p>
-
-                  </div>
-
-                </div>
-
-
-
-                <div className="bg-slate-800 rounded-2xl p-5 flex items-center gap-5">
-
-                  <div className="bg-blue-600 rounded-xl p-3">
-
-                    <Users className="text-white" size={24} />
-
-                  </div>
-
-
-                  <div>
-
-                    <h3 className="text-white font-semibold">
-                      Professional Support
-                    </h3>
-
-
-                    <p className="text-gray-400 text-sm mt-1">
-                      Solutions designed around client requirements.
-                    </p>
-
-                  </div>
-
-                </div>
-
-
-              </div>
+              </p>
 
 
             </div>
 
+
           </div>
+
 
 
         </div>
 
+
       </div>
+
 
     </section>
   );

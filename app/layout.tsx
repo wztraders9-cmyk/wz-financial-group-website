@@ -6,46 +6,46 @@ import Footer from "./components/Footer";
 
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://elitesourcepoint.com"),
 
   title: {
-    default: "WZ Financial Group | Digital Solutions & Operational Support",
-    template: "%s | WZ Financial Group",
+    default: "Elite Source Point | Procurement & Sourcing Support",
+    template: "%s | Elite Source Point",
   },
 
-
   description:
-    "WZ Financial Group provides digital solutions, operational support and technology-enabled services for individuals, professionals and businesses.",
+    "Elite Source Point provides procurement, sourcing and logistics support for individuals seeking assistance with product sourcing, purchasing coordination and delivery arrangements.",
 
 
   keywords: [
-    "digital solutions",
-    "operational support",
-    "technology services",
-    "workflow solutions",
-    "business support",
-    "identity verification",
-    "compliance support",
+    "procurement support",
+    "product sourcing",
+    "purchase coordination",
+    "supplier research",
+    "logistics support",
   ],
 
 
   authors: [
     {
-      name: "WZ Financial Group",
+      name: "Elite Source Point",
     },
   ],
 
 
-  creator: "WZ Financial Group",
+  creator: "Elite Source Point",
 
 
   openGraph: {
     title:
-      "WZ Financial Group | Digital Solutions & Operational Support",
+      "Elite Source Point | Procurement & Sourcing Support",
 
     description:
-      "Digital solutions, operational support and technology-enabled workflows for individuals, professionals and businesses.",
+      "Procurement, sourcing and logistics support helping individuals coordinate product research, purchasing and delivery arrangements.",
 
     type: "website",
+    siteName: "Elite Source Point",
+    url: "https://elitesourcepoint.com",
   },
 
 
@@ -53,9 +53,7 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-
 };
-
 
 
 export default function RootLayout({
@@ -65,7 +63,6 @@ export default function RootLayout({
 }>) {
 
   return (
-
     <html lang="en">
 
       <body>
@@ -79,7 +76,5 @@ export default function RootLayout({
       </body>
 
     </html>
-
   );
-
 }

@@ -1,107 +1,151 @@
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 text-gray-300">
-      <div className="max-w-7xl mx-auto px-8 py-16">
-        <div className="grid md:grid-cols-3 gap-10">
+    <footer className="border-t border-slate-200 bg-white">
+
+      <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
+
+
+        <div className="grid gap-10 md:grid-cols-3">
+
+
           {/* Brand */}
+
           <div>
-            <h3 className="text-2xl font-bold text-white">
-              WZ Financial Group
+
+            <h3 className="text-2xl font-extrabold tracking-tight text-[#0f3d5e]">
+              Elite Source Point
             </h3>
 
-            <p className="mt-5 leading-7">
-              Digital solutions, operational support and financial technology
-              services designed for individuals, professionals and businesses.
+
+            <div className="mt-2 h-0.5 w-12 bg-[#c28b3c]" />
+
+
+            <p className="mt-5 max-w-sm text-sm leading-relaxed text-slate-600">
+
+              Procurement, sourcing and logistics support helping individuals
+              coordinate product research, purchasing and delivery arrangements
+              through a structured process.
+
             </p>
 
-            <p className="mt-4 text-sm text-gray-400 leading-6">
-              WZ Financial Group provides technology solutions and operational
-              support services. We do not provide personal financial product
-              advice, investment recommendations or asset management services.
-            </p>
           </div>
 
-          {/* Company */}
-          <div>
-            <h4 className="font-semibold text-white mb-5">
-              Company
-            </h4>
 
-            <ul className="space-y-3">
-              <li>
-                <a href="/" className="hover:text-white transition">
-                  Home
-                </a>
-              </li>
 
-              <li>
-                <a href="/about" className="hover:text-white transition">
-                  About
-                </a>
-              </li>
-
-              <li>
-                <a href="/services" className="hover:text-white transition">
-                  Services
-                </a>
-              </li>
-
-              <li>
-                <a href="/contact" className="hover:text-white transition">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
 
           {/* Services */}
+
           <div>
-            <h4 className="font-semibold text-white mb-5">
+
+            <h4 className="text-sm font-semibold uppercase tracking-[0.15em] text-[#0f3d5e]">
               Services
             </h4>
 
-            <ul className="space-y-3">
-              <li>Financial Technology Solutions</li>
-              <li>Operational Support</li>
-              <li>Identity Verification Support</li>
-              <li>Risk & Compliance Support</li>
+
+            <ul className="mt-5 space-y-3 text-sm text-slate-600">
+
+              <li>
+                Product Sourcing
+              </li>
+
+              <li>
+                Supplier Research
+              </li>
+
+              <li>
+                Purchase Coordination
+              </li>
+
+              <li>
+                Logistics Support
+              </li>
+
             </ul>
+
           </div>
+
+
+
+
+
+          {/* Contact */}
+
+          <div>
+
+            <h4 className="text-sm font-semibold uppercase tracking-[0.15em] text-[#0f3d5e]">
+              Contact
+            </h4>
+
+
+            <div className="mt-5 space-y-3 text-sm text-slate-600">
+
+              <p>
+                info@elitesourcepoint.com
+              </p>
+
+
+            </div>
+
+          </div>
+
+
         </div>
 
-        {/* Bottom Bar */}
-        <div className="border-t border-slate-800 mt-12 pt-8 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
-          {/* Left */}
-          <p className="text-sm text-gray-400">
-            © {new Date().getFullYear()} WZ Financial Group. All rights reserved.
+
+
+
+
+        {/* Bottom */}
+
+        <div
+          className="
+            mt-10
+            border-t
+            border-slate-200
+            pt-6
+            text-sm
+            text-slate-500
+            flex
+            flex-col
+            gap-3
+            md:flex-row
+            md:items-center
+            md:justify-between
+          "
+        >
+
+          <p>
+            © {new Date().getFullYear()} Elite Source Point. All rights reserved.
+            <span className="mx-2 text-slate-300">|</span>
+            Operated by WZ Traders Pty Ltd
           </p>
 
-          {/* Center */}
-          <p className="text-sm text-gray-500 text-center">
-            Operated by{" "}
-            <span className="font-medium text-gray-300">
-              WZ Traders Pty Ltd
-            </span>
-            <br />
-            ACN: 683 347 579 · ABN: 27 683 347 579
-            <br />
-            Australia
-          </p>
 
-          {/* Right */}
-          <div className="flex items-center gap-4 text-sm">
-            <a href="/privacy" className="hover:text-white transition">
+          <div className="flex gap-5">
+
+            <a
+              href="/privacy"
+              className="transition hover:text-[#0f3d5e]"
+            >
               Privacy Policy
             </a>
 
-            <span className="text-slate-600">•</span>
 
-            <a href="/terms" className="hover:text-white transition">
-              Terms of Use
+            <a
+              href="/contact"
+              className="transition hover:text-[#0f3d5e]"
+            >
+              Contact
             </a>
+
           </div>
+
+
         </div>
+
+
       </div>
+
     </footer>
   );
 }

@@ -1,102 +1,94 @@
 "use client";
 
-import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { useState } from "react";
+import Logo from "./Logo";
+
+const navLinks = [
+  {
+    name: "Home",
+    href: "/",
+  },
+  {
+    name: "Services",
+    href: "/services",
+  },
+  {
+    name: "About",
+    href: "/about",
+  },
+  {
+    name: "Contact",
+    href: "/contact",
+  },
+];
 
 export default function Header() {
-
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="border-b border-slate-200 bg-white sticky top-0 z-50">
+    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur">
 
-      <div className="max-w-7xl mx-auto px-8 py-5">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
+        <div className="flex h-24 items-center justify-between">
 
-        <div className="flex items-center justify-between">
-
-
-          {/* Brand */}
-
-          <a href="/" className="block">
-
-            <h1 className="text-2xl font-bold text-slate-900">
-              WZ Financial Group
-            </h1>
-
-            <p className="text-sm text-gray-500 mt-1">
-  Digital Solutions • Operational Support • Professional Services
-</p>
-
-          </a>
-
-
+          {/* Logo */}
+          <Logo />
 
 
           {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center gap-9">
 
-          <nav className="hidden lg:flex items-center gap-8">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                className="
+                  text-sm
+                  font-medium
+                  text-slate-600
+                  transition
+                  hover:text-[#0f3d5e]
+                "
+              >
+                {link.name}
+              </a>
+            ))}
 
-            <a href="/" className="text-slate-700 hover:text-blue-600 transition">
-              Home
-            </a>
 
-            <a href="/services" className="text-slate-700 hover:text-blue-600 transition">
-              Services
-            </a>
-
-            <a href="/platform" className="text-slate-700 hover:text-blue-600 transition">
-              Platform
-            </a>
-
-            <a href="/compliance" className="text-slate-700 hover:text-blue-600 transition">
-              Compliance
-            </a>
-
-            <a href="/about" className="text-slate-700 hover:text-blue-600 transition">
-              About
-            </a>
-
-            <a href="/contact" className="text-slate-700 hover:text-blue-600 transition">
-              Contact
+            <a
+              href="/contact"
+              className="
+                rounded-lg
+                bg-[#0f3d5e]
+                px-6
+                py-3
+                text-sm
+                font-semibold
+                text-white
+                transition
+                hover:bg-[#0c314c]
+              "
+            >
+              Start Request
             </a>
 
           </nav>
 
 
 
-
-          {/* Desktop CTA */}
-
-          <a
-            href="/contact"
-            className="
-              hidden lg:block
-              bg-blue-600
-              text-white
-              px-6
-              py-3
-              rounded-xl
-              font-semibold
-              hover:bg-blue-700
-              transition
-            "
-          >
-            Get Started
-          </a>
-
-
-
-
           {/* Mobile Button */}
-
           <button
+            className="md:hidden text-slate-700"
             onClick={() => setOpen(!open)}
-            className="lg:hidden text-slate-900"
+            aria-label="Toggle menu"
           >
-
-            {open ? <X size={28} /> : <Menu size={28} />}
-
+            {open ? (
+              <X size={28} />
+            ) : (
+              <Menu size={28} />
+            )}
           </button>
 
 
@@ -104,64 +96,54 @@ export default function Header() {
 
 
 
-
-        {/* Mobile Menu */}
-
+        {/* Mobile Navigation */}
         {open && (
 
-          <div className="lg:hidden mt-6 space-y-4 border-t pt-6">
+          <div className="md:hidden border-t border-slate-200 py-6">
+
+            <nav className="flex flex-col gap-5">
+
+              {navLinks.map((link) => (
+
+                <a
+                  key={link.name}
+                  href={link.href}
+                  onClick={() => setOpen(false)}
+                  className="
+                    text-sm
+                    font-medium
+                    text-slate-700
+                    hover:text-[#0f3d5e]
+                  "
+                >
+                  {link.name}
+                </a>
+
+              ))}
 
 
-            <a href="/" className="block text-slate-700">
-              Home
-            </a>
+              <a
+                href="/contact"
+                className="
+                  mt-2
+                  rounded-lg
+                  bg-[#0f3d5e]
+                  px-5
+                  py-3
+                  text-center
+                  text-sm
+                  font-semibold
+                  text-white
+                "
+              >
+                Start Request
+              </a>
 
-
-            <a href="/services" className="block text-slate-700">
-              Services
-            </a>
-
-
-            <a href="/platform" className="block text-slate-700">
-              Platform
-            </a>
-
-
-            <a href="/compliance" className="block text-slate-700">
-              Compliance
-            </a>
-
-
-            <a href="/about" className="block text-slate-700">
-              About
-            </a>
-
-
-            <a href="/contact" className="block text-slate-700">
-              Contact
-            </a>
-
-
-            <a
-              href="/contact"
-              className="
-                inline-block
-                bg-blue-600
-                text-white
-                px-6
-                py-3
-                rounded-xl
-                font-semibold
-              "
-            >
-              Get Started
-            </a>
-
+            </nav>
 
           </div>
 
         )}
-
 
       </div>
 
