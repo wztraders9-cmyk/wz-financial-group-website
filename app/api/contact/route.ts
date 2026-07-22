@@ -14,7 +14,7 @@ export async function POST(request: Request) {
       );
     }
 
-    await resend.emails.send({
+    const result = await resend.emails.send({
       from: "Elite Source Point <onboarding@resend.dev>",
       to: "info@elitesourcepoint.com",
       replyTo: email,
@@ -31,7 +31,7 @@ export async function POST(request: Request) {
         <p>${message.replace(/\n/g, "<br/>")}</p>
       `,
     });
-
+    console.log("Resend result:", result);
     return NextResponse.json({ success: true });
 
   } catch (error) {
