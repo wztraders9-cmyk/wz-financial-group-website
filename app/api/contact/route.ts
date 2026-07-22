@@ -15,7 +15,7 @@ export async function POST(request: Request) {
     }
 
     const result = await resend.emails.send({
-      from: "Elite Source Point <onboarding@resend.dev>",
+      from: "Elite Source Point <info@elitesourcepoint.com>",
       to: "info@elitesourcepoint.com",
       replyTo: email,
       subject: `Elite Source Point Enquiry - ${subject}`,
